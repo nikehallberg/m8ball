@@ -7,3 +7,5 @@ which triggers the rotation and answer reveal sequence
 CSS Styling
 and an alluring 8-Ball that calls for a click. The captivating answer reveal is achieved with a smooth 
 transition and transform effect.
+
+Byta knappen till en cirkel

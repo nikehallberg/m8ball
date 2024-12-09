@@ -7,12 +7,12 @@
     font-size: 18px;
 }
 
-button {
+span {
+    height: 125px;
+    width: 125px;
+    background-color: #bbb;
     border-radius: 50%;
-    height: 320px;
-    width: 320px;
-    border-width: 72px;
-    font-size: 92px;
+    display: inline-block;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
