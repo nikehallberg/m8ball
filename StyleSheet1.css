@@ -8,12 +8,22 @@
 }
 
 span {
-    height: 125px;
-    width: 125px;
-    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-width: 225px;
+}
+.black {
+    background-color: #000000;
+    height: 325px;
+    width: 325px;
+}
+
+.white {
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    
 }
 
 .answers {
