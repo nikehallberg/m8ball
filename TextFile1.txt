@@ -1,0 +1,9 @@
+8-Ball Rotation: The 'rotateBall' function sets the 8-Ball in motion, 
+spinning it with random rotations to heighten the suspense
+
+Event Listener: The 8-Ball springs to action when clicked, thanks to the 'click' event listener, 
+which triggers the rotation and answer reveal sequence
+
+CSS Styling
+and an alluring 8-Ball that calls for a click. The captivating answer reveal is achieved with a smooth 
+transition and transform effect.

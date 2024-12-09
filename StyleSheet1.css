@@ -1,0 +1,21 @@
+﻿body {
+    text-align: center;
+    font-family: Serif;
+    font-style: oblique;
+    background: linear-gradient(#1D4350, #A43931);
+    background-attachment: fixed;
+    font-size: 18px;
+}
+
+button {
+    border-radius: 50%;
+    height: 320px;
+    width: 320px;
+    border-width: 72px;
+    font-size: 92px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.answers {
+    font-size: 24px;
+}
