@@ -44,7 +44,7 @@ const showAnswer = () => {
     setTimeout(() => {
         eightBall.classList.remove('shake');
         cooldown = false; 
-    }, 500); 
+    }, 2500); 
 };
 
 document.getElementById('8ball').addEventListener('click', showAnswer);
