@@ -7,6 +7,10 @@
     font-size: 18px;
 }
 
+h1 {
+    user-select: none;
+}
+
 span {
     border-radius: 50%;
     display: inline-block;
