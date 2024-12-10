@@ -22,16 +22,28 @@ const answers = [
 ];
 
 const generateAnswer = () => {
-    const randomIndex = Math.floor(Math.random() * answers.length); 
-    return answers[randomIndex]; 
+    const randomIndex = Math.floor(Math.random() * answers.length);
+    return answers[randomIndex];
 };
+
+let cooldown = false; 
+const cooldownTime = 2000; 
 
 const showAnswer = () => {
-    const answerDiv = document.querySelector('.answers'); 
-    const answer = generateAnswer(); 
-    answerDiv.innerHTML = `<p>${answer}</p>`; 
+    if (cooldown) return; 
+
+    const answerDiv = document.querySelector('.answers');
+    const answer = generateAnswer();
+    answerDiv.innerHTML = `<p>${answer}</p>`;
+
+    cooldown = true;
+    const eightBall = document.getElementById('8ball');
+    eightBall.classList.add('disabled'); 
+
+    setTimeout(() => {
+        cooldown = false; 
+        eightBall.classList.remove('disabled');
+    }, cooldownTime);
 };
 
-document.querySelector('.ball button').addEventListener('click', () => {
-    showAnswer();
-});
+document.getElementById('8ball').addEventListener('click', showAnswer);
