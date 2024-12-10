@@ -10,24 +10,45 @@
 span {
     border-radius: 50%;
     display: inline-block;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-width: 225px;
 }
+
 .black {
-    background-color: #000000;
-    height: 325px;
-    width: 325px;
+    width: 50vw;
+    height: 50vw;
+    max-width: 400px;
+    max-height: 400px;
+    background: radial-gradient(circle, rgb(78, 78, 78) 0%, black 100%);
+    border-radius: 50%;
+    margin: 5vw auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .white {
-    background-color: #ffffff;
-    height: 150px;
-    width: 150px;
-    
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: calc(50% - min(10vw, 100px));
+    margin: auto;
+    display: flex; 
+    cursor: pointer;
+}
+
+.eight {
+    font-size: 8vw;
+    font-weight: bold;
+    color: black;
+    margin: auto;
+    align-self: center; 
+    text-align: center;
 }
 
 .answers {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 #8ball:active {
@@ -64,9 +85,4 @@ span {
     100% {
         opacity: 1;
     }
-}
-
-#8ball.disabled {
-    opacity: 0.5; 
-    cursor: not-allowed; 
 }
