@@ -34,7 +34,7 @@ span {
     position: relative;
     top: calc(50% - min(10vw, 100px));
     margin: auto;
-    display: flex; 
+    display: flex;
     cursor: pointer;
 }
 
@@ -43,15 +43,12 @@ span {
     font-weight: bold;
     color: black;
     margin: auto;
-    align-self: center; 
+    align-self: center;
     text-align: center;
+    user-select: none;
 }
 
-.answers {
-    font-size: 32px;
-}
-
-#8ball:active {
+.shake {
     animation: shake 0.5s ease;
 }
 
@@ -73,9 +70,13 @@ span {
     }
 }
 
-.answers p {
-    animation: fadeIn 1s ease-in-out;
+.answers {
+    font-size: 32px;
 }
+
+    .answers p {
+        animation: fadeIn 1s ease-in-out;
+    }
 
 @keyframes fadeIn {
     0% {

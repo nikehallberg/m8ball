@@ -26,11 +26,11 @@ const generateAnswer = () => {
     return answers[randomIndex];
 };
 
-let cooldown = false; 
-const cooldownTime = 2000; 
+let cooldown = false;
+const cooldownTime = 2000;
 
 const showAnswer = () => {
-    if (cooldown) return; 
+    if (cooldown) return;
 
     const answerDiv = document.querySelector('.answers');
     const answer = generateAnswer();
@@ -38,12 +38,13 @@ const showAnswer = () => {
 
     cooldown = true;
     const eightBall = document.getElementById('8ball');
-    eightBall.classList.add('disabled'); 
+
+    eightBall.classList.add('shake');
 
     setTimeout(() => {
+        eightBall.classList.remove('shake');
         cooldown = false; 
-        eightBall.classList.remove('disabled');
-    }, cooldownTime);
+    }, 500); 
 };
 
 document.getElementById('8ball').addEventListener('click', showAnswer);
